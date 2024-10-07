@@ -1,0 +1,258 @@
+body {
+    font-family: 'Calibri', sans-serif;
+    margin: 0;
+    height: 100px;
+    overflow: scroll;
+    color: rgb(255, 255, 255);
+    padding: 50px; 
+    background-color: transparent;
+    background-image: url('p2.jpg');
+    background-size: cover; 
+    background-position: top; 
+    background-repeat: no-repeat; 
+    text-align: center;
+}
+
+
+
+header {
+    color: #fff;
+    padding: 0px, 0px;
+    text-align: center;
+    background-color: transparent;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {    
+    margin: 0 15px;
+}
+
+nav ul li a {           
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-size: flex;
+    background-position: center;
+    color: #fff;
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.about {
+    padding: 650px; 
+    width: 500px; 
+    font-size: 1.10em;
+    color: black;
+    opacity: 0.80;
+    height: fit-content; 
+    text-align: left;
+    background-image: url('Mandeep.png');
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+
+
+
+.portfolio {
+    padding: 30vh;
+    height: fit-content;
+    text-align: center;
+    background-color: transparent;
+    background-size: flex;
+    
+}
+
+/* for gallery 1 image containers */
+.gallery {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 0px;
+    object-fit: cover;
+    background-color: #04072161;
+    border-radius: 10px;
+    justify-content:center;
+    gap: 0px;
+}
+
+.gallery img {
+    max-width: 350px;
+    height: 10cm;
+    border-radius: 6%;
+    box-shadow: 0px 4px 80px rgba(255, 255, 255, 0.2);
+}
+
+/* for gallery2 part ------------------*/
+.gallery2 {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin: 0px; 
+    background-color: #050614c1; 
+    padding: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+
+  .gallery2-image {
+    width: 250px; 
+    height: 350px; 
+    margin: 10px; 
+    border-radius: 70px; 
+    object-fit: cover; 
+    transition: transform 0.3s; 
+  }
+  
+  .gallery2-image:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  }
+
+/* for model names */
+.gallery2 figure {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .gallery2 figcaption {
+    font-size: 16px;
+    color: #e9e8f6;
+    text-align: center;
+    margin-top: 10px;
+  }
+/*-----------------------*/  
+
+footer {
+    background-color: transparent;
+    color: #ffffff;
+    text-align: center;
+    padding: 500px 0px;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Fade-in class */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Lightbox styling */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+}
+
+#lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+/* Back to top button */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* for join us form */
+.joinus {
+    max-width: 500px;
+    margin: 70vh auto;
+    padding: 50px;
+    background-color: black;
+    border: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.70;
+}
+
+
+.joinus label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.joinus input, .joinus select, .joinus textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.joinus button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.joinus button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+
+
+
+

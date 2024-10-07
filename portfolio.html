@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="joinus.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="portfolio">
+      <h1>Females</h1>
+      <div class="gallery">
+          <figure>
+            <img src="Prachi polaroid1.png" alt="Fashion Shot 1" class="gallery-image">
+            <figcaption>Prachi
+              <button class="book-now" data-model-name="Prachi">Book Now</button>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="Arpita Polaroid1.png" alt="Fashion Shot 2" class="gallery-image">
+            <figcaption>Arpita
+              <button class="book-now" data-model-name="Arpita">Book Now</button>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="Kripa Polaroid1.jpeg" alt="Fashion Shot 3" class="gallery-image">
+            <figcaption>Kripa
+              <button class="book-now" data-model-name="Kripa">Book Now</button>
+            </figcaption>
+          </figure>
+          <figure>
+              <img src="Navya Polaroid1.jpeg" alt="Fashion Shot 3" class="gallery-image">
+              <figcaption>Navya
+                <button class="book-now" data-model-name="Navya">Book Now</button>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="Avanti Polaroid 1.jpeg" alt="Fashion Shot 3" class="gallery-image">
+              <figcaption>Avanti
+                <button class="book-now" data-model-name="Avanti">Book Now</button>
+              </figcaption>
+            </figure>
+    
+      </div>
+  </section>
+    <section class="portfolio2">
+      <h1>Males</h1>
+      <div class="gallery2">
+          <figure>
+            <img src="Harsh Polaroid 1.JPG" alt="Fashion Shot 1" class="gallery2-image">
+            <figcaption>Harsh
+              <button class="book-now" data-model-name="Harsh">Book Now</button>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="Aditya Raj.jpg" alt="Fashion Shot 2" class="gallery2-image">
+            <figcaption>Aditya
+              <button class="book-now" data-model-name="Aditya">Book Now</button>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="Anand polaroid 1.jpeg" alt="Fashion Shot 3" class="gallery2-image">
+            <figcaption>Anand
+              <button class="book-now" data-model-name="Anand">Book Now</button>
+            </figcaption>
+          </figure>
+          <figure>
+              <img src="Reyaan Polaroid 1.jpeg" alt="Fashion Shot 3" class="gallery2-image">
+              <figcaption>Reyaan
+                <button class="book-now" data-model-name="Reyaan">Book Now</button>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="Akbar.png" alt="Fashion Shot 3" class="gallery2-image">
+              <figcaption>Akbar
+                <button class="book-now" data-model-name="Akbar">Book Now</button>
+              </figcaption>
+            </figure>
+          
+      </div>
+  </section>
+    
+    <!-- for book model-->
+    
+    <script>
+      const bookNowButtons = document.querySelectorAll('.book-now');
+
+      bookNowButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const modelName = button.getAttribute('data-model-name');
+          alert(`Your Model ${modelName} Is Booked!`);
+        });
+      });
+  </script>
+</body>
+</body>
+</html>
+
+
+

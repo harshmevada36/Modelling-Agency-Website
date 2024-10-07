@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="joinus.html">Join Us</a></li> <!-- new tab -->
+            </ul>
+        </nav>
+    </header>
+ <!-- new join us section -->
+    <section class="joinus">
+        <h1>Want to become a Model Then</h1>
+        <h2>Join Us</h2>
+        <form id="joinus-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"><br><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label for="height">Height (in feet):</label>
+            <input type="number" id="height" name="height"><br><br>
+            <label for="polaroids">Polaroids:</label>
+            <input type="file" id="polaroids" name="polaroids"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <button id="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <script>
+    document.getElementById('submit-btn').addEventListener('click', function(event) {
+    event.preventDefault();
+    var formData = new FormData(document.getElementById('joinus-form'));
+    var isValid = true;
+
+    // Check if any of the fields are empty
+    var fields = document.querySelectorAll('#joinus-form input, #joinus-form textarea, #joinus-form select');
+    fields.forEach(function(field) {
+        if (field.value === '') {
+            isValid = false;
+            alert(`This field should be filled: ${field.id}`);
+        }
+    });
+
+    if (isValid) {
+        // You can add your form submission logic here, e.g., sending data to a server
+        alert('Form submitted successfully!');
+    }
+});
+    </script>
+</body>
+</html>
