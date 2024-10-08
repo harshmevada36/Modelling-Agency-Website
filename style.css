@@ -60,6 +60,9 @@ nav ul li a {
 .about {
     padding: 650px; 
     width: 500px; 
+    border-radius: 300px;
+    border-left-style: ridge;
+    border-right-style: ridge;
     font-size: 1.10em;
     color: black;
     opacity: 0.80;
